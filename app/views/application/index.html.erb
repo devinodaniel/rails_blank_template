@@ -1,9 +1,15 @@
-<h1>Vagrant is running!</h1>
+<h1>Vagrant & RoR is running!</h1>
 
 <h3>System ENV Variables</h3>
+	<ul>
+	<% @envs.each do |variable, value| %>
+		<li><%= variable %> <%= value %></li>
+	<% end %>
+	</ul>
 
-<ul>
-<% @envs.each do |variable, value| %>
-	<li><%= variable %> <%= value %></li>
-<% end %>
-</ul>
+<h3>Users</h3>
+	<ul>
+	<% @users.each do |user| %>
+		<li><%= user %></li>
+	<% end %>
+	</ul>
